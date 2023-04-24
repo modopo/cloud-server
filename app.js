@@ -13,10 +13,6 @@ app.get('/', (request, response, next) => {
   response.status(200).send('This is live.');
 });
 
-app.get('/cli', (request, response, next) => {
-  response.status(200).send('Deployed from CLI');
-})
-
 module.exports = {
   app,
   start: (PORT) => {
